@@ -1,0 +1,5 @@
+# DSH 抖音链接转视频：贴一条抖音分享链接，直接落成能播放的 mp4。
+- insert:
+    - id: douyin-video
+      name: dsh-douyin-video
+      config: {}

@@ -1,0 +1,43 @@
+{
+  "name": "dsh-douyin-video",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "抖音链接转视频：把分享链接 / 分享文案变成能直接播放的 mp4（也支持图集）。DSH 插件、命令行、MCP server 三形态，零依赖。",
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "main": "./plugin.js",
+  "bin": {
+    "douyin-video": "./cli.js",
+    "douyin-mcp": "./mcp-server.js"
+  },
+  "exports": {
+    ".": "./plugin.js",
+    "./core": "./src/index.js",
+    "./cli": "./cli.js"
+  },
+  "files": [
+    "plugin.js",
+    "cli.js",
+    "mcp-server.js",
+    "src",
+    "cordis.patch.yml",
+    "README.md",
+    "install.sh"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "douyin",
+    "video",
+    "download",
+    "mcp"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
