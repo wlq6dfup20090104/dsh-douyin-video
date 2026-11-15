@@ -1,1 +1,7 @@
-node_modules/\ndouyin/\ndist/\n*.log\n.DS_Store\nThumbs.db\n*.part\n
+node_modules/
+douyin/
+dist/
+*.log
+.DS_Store
+Thumbs.db
+*.part
